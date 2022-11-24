@@ -12,16 +12,21 @@
             <tbody>
                 @forelse ($cidades as $cidade)
                     <tr>
-                        <td>{{ $cidade }}</td>
+                        <td>{{ $cidade->nome }}</td>
                         <td class="right-align">Excluir - Remover</td>
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="2">Não exixtem cidades cadastradas</td>
+                        <td colspan="2">Não existem cidades cadastradas</td>
                         <td>Excluir - Remover</td>
                     </tr>
                 @endforelse
             </tbody>
         </table>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large waves-effect waves-light" href="">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
     </section>
 @endsection

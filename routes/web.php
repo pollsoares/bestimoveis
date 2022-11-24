@@ -14,4 +14,7 @@ use App\Http\Controllers\Admin\CidadeController;
 |
 */
 
-Route::get('/', [CidadeController::class, 'cidades']);
+Route::redirect('/', '/admin/cidades');
+
+Route::get('admin/cidades', [CidadeController::class, 'cidades']);
+Route::get('admin/cidades/adicionar', [CidadeController::class, 'formAdicionar']);
