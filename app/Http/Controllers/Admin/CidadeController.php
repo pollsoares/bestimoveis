@@ -8,7 +8,8 @@ use App\Models\Cidade;
 
 class CidadeController extends Controller
 {
-    public function cidades(){
+    public function cidades()
+    {
 
         $subtitulo = 'Lista de Cidades';
         //$cidades = ['Sao Paulo','Santos'];
@@ -22,6 +23,11 @@ class CidadeController extends Controller
         //}
 
         return view('admin.cidades.index', compact('subtitulo', 'cidades'));
+    }
+
+    public function formAdicionar()
+    {
+       return "Form Adicionar";
     }
 
 }
