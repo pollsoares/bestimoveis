@@ -27,7 +27,25 @@ class CidadeController extends Controller
 
     public function formAdicionar()
     {
-       return "Form Adicionar";
+        return view('admin.cidades.form');
     }
 
+    public function adicionar(Request $request)
+    {
+        //pegar o dado enviado pelo form
+        /*$nome = $request->nome;
+        echo $nome;*/
+
+        //Primeira Maneira - criar um objeto do modelo (classe) Cidade - Neste caso informamos campo a campo.
+        /*$cidade = new Cidade();
+        $cidade->nome = $request->nome;
+        $cidade->save(); //Salva no banco de dados
+        return redirect()->route('admin.cidades.listar');*/
+
+        //Segunda Maneira - No Model, atribuimos o fillable para atribuição em
+        //massa que queremos salvar assim não precisamos repetir os campos um por um (mais Seguro)
+        Cidade::create($request->all());
+        return redirect()->route('admin.cidades.listar');
+
+    }
 }

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Projeto</title>
@@ -20,8 +20,8 @@
             <div class="nav-whapper">
                 <a href="" class="brand-logo">Hemocentro de Campinas</a>
                 <ul class="right">
-                    <li><a href="#"></a>Imoveis</li>
-                    <li><a href="#"></a>Cidades</li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Sair</a></li>
                 </ul>
             </div>
         </div>

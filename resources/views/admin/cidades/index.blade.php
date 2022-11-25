@@ -24,7 +24,8 @@
             </tbody>
         </table>
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large waves-effect waves-light" href="">
+            {{--<a class="btn-floating btn-large waves-effect waves-light" href="{{url('/admin/cidades/adicionar')}}"> Uma forma de adicionar para a rota--}}
+            <a class="btn-floating btn-large waves-effect waves-light" href="{{route('admin.cidades.form')}}">
                 <i class="large material-icons">add</i>
             </a>
         </div>
